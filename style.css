@@ -1,0 +1,141 @@
+body {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("image/bckgrnd.jpeg");
+  cursor: crosshair;
+}
+
+::selection {
+	background: #8C5FAB; 
+}
+
+.header {
+  height: 20%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 30%;
+}
+
+.puzzleholder {
+  height: 100%;
+  width: 40%;
+}
+
+.center-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.puzpic {
+	max-height: 30%;
+	max-width: 30%;
+	margin: 1%;
+}
+
+.puzpic:hover {
+	filter: opacity(50%);
+}
+
+.button:hover {
+	transform: scale(0.95, 0.95);
+	filter: drop-shadow(4px 4px 2px #006C7F);
+}
+
+.pgswitch {
+	filter: grayscale(100%);
+}
+
+.diamond {
+	display: none;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.popup {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 100px;
+	-webkit-animation:colorchange 20s infinite alternate;
+}
+
+.popup:hover {
+	filter: opacity(50%);
+}
+
+a {
+	text-decoration: none;
+}
+
+.gone {
+	display: none;
+}
+
+@-webkit-keyframes colorchange {
+      0% {
+        
+        color: orange;
+      }
+      
+      10% {
+        
+        color: #F2BA09;
+      }
+      
+      20% {
+        
+        color: #EF3828;
+      }
+      
+      30% {
+        
+        color: #BF1575;
+      }
+      
+      40% {
+        
+        color: #8400D9;
+      }
+      
+      50% {
+        
+        color: #11C02A;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="image/favicon.ico" rel="icon" type="image/x-icon"/>
+		<title>find the photo</title>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+		<link rel="stylesheet" href="style.css"/>
+  </head>
+  
+  <body>
+  
+    <div class="header center-content">
+		<img src="image/diamonds.png" class="" id="switch" onclick="changePage()"/> <!--make conditional statement for onclick-->
+	</div>
+    
+    <div class="main">
+	  <div class="sidebar"></div>
+	    
+	  <div class="puzzleholder center-content" onmouseover="setInterval(imageReset, 40000)">
+		<img src="image/mar38.png" class="puzpic" id="mar1" onclick="photoChoose(this)"/>
+		<img src="image/mar23.png" class="puzpic" id="mar2" onclick="photoChoose2(this)"/>
+		<img src="image/mar15.jpg" class="puzpic" id="mar3" onclick="photoChoose3(this)"/>
+		<img src="image/mar10.jpg" class="puzpic" id="mar4" onclick="photoChoose4(this)"/>
+		<img src="image/mar25.png" class="puzpic" id="mar5" onclick="photoChoose5(this)"/>
+		<img src="image/mar33.png" class="puzpic" id="mar6" onclick="photoChoose6(this)"/>
+		<img src="image/mar31.png" class="puzpic" id="mar7" onclick="photoChoose7(this)"/>
+		<img src="image/mar20.png" class="puzpic" id="mar8" onclick="photoChoose8(this)"/>
+		<img src="image/mar28.png" class="puzpic" id="mar9" onclick="photoChoose9(this)"/>
+		<a href="https://www.davincischools.org/"><p class="popup gone" id="pop">ESCAPE!</p></a>
+	  </div>
+	  
+	  <div class="sidebar"></div>
+    </div>
+  
+  <script src="script.js"></script>
+  
+  </body>
+
+</html>
