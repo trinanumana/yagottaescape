@@ -5,7 +5,7 @@ body {
   background-image: url("image/bckgrnd.jpeg");
   cursor: crosshair;
 }
-
+/*when you select text or an image, the typical highlight color will be chanegd to purple. just for lols.*/
 ::selection {
 	background: #8C5FAB; 
 }
@@ -47,12 +47,12 @@ body {
 .puzpic:hover {
 	filter: opacity(50%);
 }
-
+/*makes whatever this class is given to's scale decrease in size, and also adds a shadow with a specfic color only when the mouse is hovering over*/
 .button:hover {
 	transform: scale(0.95, 0.95);
 	filter: drop-shadow(4px 4px 2px #006C7F);
 }
-
+/*changes the grayscale of whatever is given this class to fully gray*/
 .pgswitch {
 	filter: grayscale(100%);
 }
@@ -83,7 +83,7 @@ a {
 .gone {
 	display: none;
 }
-
+/*this is an animation that makes the text chnage color. it is a continous loop and it follows this pattern*/
 @-webkit-keyframes colorchange {
       0% {
         
