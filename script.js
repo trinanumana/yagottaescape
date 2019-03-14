@@ -1,3 +1,4 @@
+//these following functions just allow for the user to click through a set of four images continuously. i had to make nine separate ones because if it were one full function, that woudl be a lot of images.
 function photoChoose(el) {
 	if (el.src.match("image/mar38.png"))
 		el.src="image/mar19.jpg"; //actual img
@@ -132,7 +133,7 @@ function photoChoose9(el) {
 	}
 		checkPhotos();
 }
-
+//it is checking to see if the different IDs img sources are the ones I indentify, if they are, the classes are added to the element ID'd below.
 function checkPhotos() {
 	if (mar1.getAttribute('src') == "image/mar19.jpg" && mar2.getAttribute('src') == "image/mar18.jpg" && mar3.getAttribute('src') == "image/mar17.jpg" && mar4.getAttribute('src') == "image/mar16.jpg" && mar5.getAttribute('src') == "image/mar15.jpg" && mar6.getAttribute('src') == "image/mar14.jpg" && mar7.getAttribute('src') == "image/mar13.jpg" && mar8.getAttribute('src') == "image/mar11.jpg" && mar9.getAttribute('src') == "image/mar10.jpg") {
 		document.getElementById("switch").classList.add("pgswitch");
@@ -142,7 +143,7 @@ function checkPhotos() {
 		// nothing
 	}
 }
-
+//I am hiding all the photos by adding a class to the IDs identified below, and displaying text by removing a class to the Id indentified below as well.
 function changePage() {
 	mar1.classList.add("diamond");
 	mar2.classList.add("diamond");
@@ -154,10 +155,8 @@ function changePage() {
 	mar8.classList.add("diamond");
 	mar9.classList.add("diamond");
 	document.getElementById("pop").classList.remove("gone");
-	document.getElementById("pop2").classList.remove("gone");
-	document.getElementById("pop3").classList.remove("gone");
 }
-
+// this is the function that was being called in the setInterval attribute in html. it's basically saying if a certain ID's source doesn't equal a specific image, after the 40s go by, the image will reset to the first image that was displayed.
 function imageReset() {
 	if (mar1.getAttribute('src') != "image/mar19.jpg") {
 		document.getElementById("mar1").src="image/mar38.png";
